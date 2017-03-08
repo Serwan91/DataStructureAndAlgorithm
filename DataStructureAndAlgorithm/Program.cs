@@ -10,21 +10,29 @@ namespace DataStructureAndAlgorithm
     {
         static void Main(string[] args)
         {
-            var res = "y";
-            do
-            {
-                Console.WriteLine("Please Enter the new size for the data array");
-                long[] DataArr = GetSampleData(Convert.ToInt64(Console.ReadLine()));
-                Array.Sort<long>(DataArr); 
+            #region BigONotaion    
+            //var res = "y";
+            //do
+            //{
+            //    Console.WriteLine("Please Enter the new size for the data array");
+            //    long[] DataArr = GetSampleData(Convert.ToInt64(Console.ReadLine()));
+            //    Array.Sort<long>(DataArr); 
 
-                //BigONotationDemo.PrintConcept();
-                BigONotationDemo.ShowBigODemo(DataArr);
+            //    //BigONotationDemo.PrintConcept();
+            //    BigONotationDemo.ShowBigODemo(DataArr);
 
-                Console.WriteLine("Key-in 'N' to exit program. Else continue with new sample data");
-                res = Console.ReadLine().ToString();
-            } while (res.ToUpper()  != "N");
+            //    Console.WriteLine("Key-in 'N' to exit program. Else continue with new sample data");
+            //    res = Console.ReadLine().ToString();
+            //} while (res.ToUpper()  != "N");
+            #endregion
 
-            Console.ReadLine();
+            
+            Console.WriteLine("Please Enter Search Value");
+            //BinarySearch.FindFirstOccurence(Console.ReadLine());
+            //BinarySearch.FindLastOccurence(Console.ReadLine());
+            //BinarySearch.FindTotalOccurence(Console.ReadLine());
+            BinarySearch.FindCountofUnqiueWords();
+            
         }
 
         private static long[] GetSampleData(long arraysize)
