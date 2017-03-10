@@ -41,6 +41,10 @@ namespace DataStructureAndAlgorithm
             #endregion
 
 
+            #region BubbleSort
+            BubbleSort.SortStrings();
+            BubbleSort.SelectionSortNumbers();
+            #endregion
 
 
 

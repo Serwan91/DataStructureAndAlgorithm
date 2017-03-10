@@ -24,7 +24,9 @@ namespace DataStructureAndAlgorithm
 
         public static void DumpArray<T>(T[] array)
         {
-            Array.ForEach(array, x => Console.WriteLine(x));
+            //Array.ForEach(array, x => Console.Write(x));
+            Console.WriteLine(String.Join(",", array));
+            Console.WriteLine("");
         }
     }
 }
