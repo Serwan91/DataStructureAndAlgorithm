@@ -18,5 +18,21 @@ namespace DataStructureAndAlgorithm
                                                                          
             return builder;
         }
+
+        public static long[] GetSampleNumbersData(long arraysize)
+        {
+            long[] DataArr;
+            Random random = new Random();
+            // Sample Data : 
+            DataArr = new long[arraysize];
+            //initialize Array
+            for (int i = 0; i < DataArr.Length; i++)
+            {
+                DataArr[i] = random.Next(1, DataArr.Length);
+                //Console.WriteLine(DataArr[i] +" ,");
+            }
+
+            return DataArr;
+        }
     }
 }

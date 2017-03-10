@@ -21,5 +21,10 @@ namespace DataStructureAndAlgorithm
             }
             return rows;
         }
+
+        public static void DumpArray<T>(T[] array)
+        {
+            Array.ForEach(array, x => Console.WriteLine(x));
+        }
     }
 }
