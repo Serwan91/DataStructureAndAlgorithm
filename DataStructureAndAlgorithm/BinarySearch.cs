@@ -8,11 +8,15 @@ namespace DataStructureAndAlgorithm
 {
     static class BinarySearch
     {
-        
+        static List<string> builder = new List<string>();
         public static void FindFirstOccurence(string searchvalue)
         {
             // Sample Data: 
-            string[] testArray = SampleData.GetSampleData();
+            builder.Add("golu"); builder.Add("kolu"); builder.Add("nolu"); builder.Add("bolu");
+            builder.Add("molu"); builder.Add("polu"); builder.Add("oolu"); builder.Add("bolu");
+            builder.Add("chlu"); builder.Add("jolu"); builder.Add("rolu"); builder.Add("aolu");
+            builder.Add("dolu"); builder.Add("iolu"); builder.Add("rolu"); builder.Add("bolu");
+            string[] testArray = builder.ToArray();
             //string[] testArray = Utility.LoadCSVFile();
             Array.Sort(testArray);
             foreach (var item in testArray)
@@ -53,7 +57,12 @@ namespace DataStructureAndAlgorithm
 
         public static void FindLastOccurence(string seachvalue)
         {
-            string[] testArray = SampleData.GetSampleData();
+            // Sample Data: 
+            builder.Add("golu"); builder.Add("kolu"); builder.Add("nolu"); builder.Add("bolu");
+            builder.Add("molu"); builder.Add("polu"); builder.Add("oolu"); builder.Add("folu");
+            builder.Add("chlu"); builder.Add("jolu"); builder.Add("rolu"); builder.Add("aolu");
+            builder.Add("dolu"); builder.Add("iolu"); builder.Add("rolu"); builder.Add("bolu");
+            string[] testArray = builder.ToArray();
             Array.Sort(testArray);
             foreach (var item in testArray)
             {
@@ -86,8 +95,11 @@ namespace DataStructureAndAlgorithm
         public static void FindTotalOccurence(string searchvalue)
         {
             // Sample Data: 
-
-            string[] testArray = SampleData.GetSampleData();
+            builder.Add("golu"); builder.Add("kolu"); builder.Add("nolu"); builder.Add("bolu");
+            builder.Add("molu"); builder.Add("polu"); builder.Add("oolu"); builder.Add("bolu");
+            builder.Add("chlu"); builder.Add("jolu"); builder.Add("rolu"); builder.Add("aolu");
+            builder.Add("dolu"); builder.Add("iolu"); builder.Add("rolu"); builder.Add("bolu");
+            string[] testArray = builder.ToArray();
             //string[] testArray = Utility.LoadCSVFile();
             Array.Sort(testArray);
             foreach (var item in testArray)
@@ -172,7 +184,13 @@ namespace DataStructureAndAlgorithm
 
         public static void  FindCountofUnqiueWords()
         {
-            string[] SampleData = DataStructureAndAlgorithm.SampleData.GetSampleData();
+            Console.WriteLine("Starting.. ");
+            // Sample Data: 
+            builder.Add("golu"); builder.Add("kolu"); builder.Add("nolu"); builder.Add("bolu");
+            builder.Add("molu"); builder.Add("polu"); builder.Add("oolu"); builder.Add("bolu");
+            builder.Add("chlu"); builder.Add("jolu"); builder.Add("rolu"); builder.Add("aolu");
+            builder.Add("dolu"); builder.Add("iolu"); builder.Add("rolu"); builder.Add("bolu");
+            string[] SampleData = builder.ToArray();
             //string[] SampleData = Utility.LoadCSVFile();
             HashSet<UnqiueSet> hashset = new HashSet<UnqiueSet>();
             Array.Sort(SampleData);
