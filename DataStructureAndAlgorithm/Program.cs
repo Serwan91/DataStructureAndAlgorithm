@@ -40,13 +40,14 @@ namespace DataStructureAndAlgorithm
             //SelectionSort.SelectionSortNumbers();
             #endregion
 
-
             #region BubbleSort
-            BubbleSort.SortStrings();
-            BubbleSort.SelectionSortNumbers();
+            //BubbleSort.SortStrings();
+            //BubbleSort.BubbleSortNumbers();
             #endregion
 
-
+            #region InsertionSort
+            InsertionSort.SortNumbers();
+            #endregion
 
             //Utility.DumpArray<long>(SampleData.GetSampleNumbersData(20));
 

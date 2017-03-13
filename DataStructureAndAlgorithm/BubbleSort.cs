@@ -32,7 +32,7 @@ namespace DataStructureAndAlgorithm
             Utility.DumpArray<string>(testArr);
         }
 
-        internal static void SelectionSortNumbers()
+        internal static void BubbleSortNumbers()
         {
             long[] testArr = SampleData.GetSampleNumbersData(20);
             Console.WriteLine("Before Sorting..");
